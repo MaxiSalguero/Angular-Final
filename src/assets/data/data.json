@@ -1,0 +1,79 @@
+{
+    "nameHeader": "Maximiliano Santiago Salguero",
+    "nav1": "Experiencias",
+    "nav2": "Educacion",
+    "nav3": "Proyectos",
+    "nav4": "Skills",
+    
+    "backImage": "https://i.ibb.co/YLBX4Kx/Portada.png",
+    "image": "https://i.ibb.co/dgtK4cL/Perfil.jpg",
+    "namePorfile": "Maximiliano Salguero",
+	"position": "Full Stack JR",
+    "ubication": "Salta (Argentina)",
+    "interes": "Tengo interes",
+    "seccion": "Añadir seccion",
+    "mas": "Mas",
+
+    "titleAcerca":"Acerca de mi",
+    "info1":"Estudiante de la Universidad Nacional de Salta",
+    "info2":"Tecnicatura en Programacion",
+
+    "experience":"Experiencias",
+	"aboutExperience": {
+        "experienceBack": "Backend Developer",
+        "companyBack": "Argentina Programa - Jornada parcial",
+        "imgBack": "https://i.ibb.co/gJDJ6K8/pixar-Logo.png",
+        "startendBack": "jul 2022 - actualidad",
+        "ubicationBack": "Salta y alrededores - Argentina",
+
+        "experienceFront": "Frontend Developer",
+		"companyFront": "Argentina Programa - Jornada parcial",
+		"imgFront": "https://i.ibb.co/mhj9Lh0/argprog.png",
+		"startendFront": "jull 2022 - actualidad",
+		"ubicationFront": "Salta y alrededores - Argentina"
+	},
+
+	"education":"Educacion",
+    "aboutEducation": {
+			"school1": "UNSa",
+			"title1": "Tecnicatura Universitaria en Programacion",
+			"img1": "https://i.ibb.co/1GW8RdJ/UNSa.png",
+			"startend1": "2023 - 2026",
+
+            "school2": "Oracle + Alura",
+			"title2": "Frontend Developer",
+			"img2": "https://i.ibb.co/B4ptM99/aluraoracle.jpg",
+			"startend2": "2022 - 2023"
+		},
+
+	"skills":"Hard Skills & Soft Skills",
+    "aboutSkills":{
+			"name1": "Resolución de problemas",
+			"progress1": "60%",
+
+            "name2": "Comunicacion",
+			"progress2": "80%",
+
+            "name3": "Conocimientos tecnicos",
+			"progress3": "60%",
+
+            "name4": "Compañerismo",
+			"progress4": "100%"
+		},
+
+    "projects":"Proyectos",
+    "aboutProjects": {
+			"name1":"Encriptador de Texto - Alura",
+			"description1":"Proyecto realizado para la primera parte del programa Alura Challenge.",
+            "buttonText":"Repositorio",
+		
+			"name2":"Aluraflix - Alura",
+			"description2":"Mi primer proyecto FrontEnd dinamico y responsive, parte de Alura Challenge."
+		},
+
+    "footer":{
+        "title":"Argentina Programa",
+        "login":"Login"
+    }
+
+}

@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+.imagen-perfil {
+    margin-top: -70px;
+    border-radius: 50px;
+}
+#prueba{
+    margin: 10px;
+}
