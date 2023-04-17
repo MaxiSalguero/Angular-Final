@@ -1,41 +1,29 @@
 <!-- Skills -->
 <div class="card shadow m-2 border-dark rounded-3">
+
     <div class="card-header py-3">
        <h6 class="m-1 fs-5 my-2">{{miPortfolio.skills}}</h6>
-   </div>
-   <div class="card-body">
-       <h4 class="small font-weight-bold">{{miPortfolio.aboutSkills.name1}} <span
-       class="float-right">{{miPortfolio.aboutSkills.progress1}}</span></h4>
-       <div class="progress mb-4">
-       <div class="progress-bar bg-danger" role="progressbar" style="width: 60%"
-           aria-valuenow="60" 
-           aria-valuemin="0" 
-           aria-valuemax="100">
-   </div>
-   </div>
-       <h4 class="small font-weight-bold">{{miPortfolio.aboutSkills.name2}} <span
-       class="float-right">{{miPortfolio.aboutSkills.progress2}}</span></h4>
-   <div class="progress mb-4">
-   <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"
-        aria-valuenow="80" 
-        aria-valuemin="0" 
-        aria-valuemax="100">
-   </div>
     </div>
-       <h4 class="small font-weight-bold">{{miPortfolio.aboutSkills.name3}} <span
-           class="float-right">{{miPortfolio.aboutSkills.progress3}}</span></h4>
-       <div class="progress mb-4">
-       <div class="progress-bar" role="progressbar" style="width: 60%"
-               aria-valuenow="60" 
-               aria-valuemin="0" 
-               aria-valuemax="100">
-       </div>
-       </div>
-                   <h4 class="small font-weight-bold">{{miPortfolio.aboutSkills.name4}} <span
-                       class="float-right">{{miPortfolio.aboutSkills.progress4}}</span></h4>
-               <div class="progress">
-               <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                               aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-               </div>
-               </div>
-           </div>
+   
+    <div *ngFor="let skill of miPortfolio.aboutSkills" class="card-body">
+        <h4 class="small font-weight-bold">{{skill.name}} <span
+        class="float-right">{{skill.progress}}%</span></h4>
+        <div class="progress mb-1">
+        <div class="progress-bar {{skill.background}}" role="progressbar" [ngStyle]="{ 'width': skill.progress + '%' }"
+            aria-valuenow="60" 
+            aria-valuemin="0" 
+            aria-valuemax="100">
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div *ngFor="let skill of miPortfolio.aboutSkills">
+        <div>{{skill.name}}</div>
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" [ngStyle]="{ 'width': skill.progress + '%' }" ></div>
+        </div>
+    </div> -->
+
+</div>

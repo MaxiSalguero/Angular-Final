@@ -2,58 +2,33 @@
     <div class="m-2 p-3 border border-dark rounded-3">
     <div class="fs-4 my-2">{{miPortfolio.experience}}</div>
 
- <!-- experiencias backend-->
-        <div id="expBackEnd" class="row m-b3">
-            <div class="col-11">
-                <div class="row mb-2">
-                    <div class="col-1 text-center ">
-                        <img [src]="miPortfolio.aboutExperience.imgBack" alt="pixar" width="40" height="40">
-                    </div>
-                    <div class="col-10 ">
-                        <div class="fs-5">{{miPortfolio.aboutExperience.experienceBack}}</div>
-                        <div class="text-secondary fs-6">{{miPortfolio.aboutExperience.companyBack}}</div>
-                        <div class="text-secondary fw-bold">{{miPortfolio.aboutExperience.startendBack}}</div>
-                        <div class="text-secondary fw-bold">{{miPortfolio.aboutExperience.ubicationBack}}</div>
-                    </div>
+<!-- experiencias backend-->
+        <div id="expBackEnd">
+
+            <div class="row mb-2" *ngFor="let experiencia of miPortfolio.aboutExperience">
+                <div class="col-1 text-center ">
+                    <img [src]="experiencia.img" alt="pixar" width="60" height="40">
                 </div>
-
-            </div>
-            <div class="col-1 text-center">
-                <i class="bi bi-plus-lg"></i>
-                <br>
-                <i class="bi bi-pencil-fill"></i>
-
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="expBackEnd">
+                
+                <div class="col-10 ">
+                    <div class="fs-5">{{experiencia.experience}}</div>
+                    <div class="text-secondary fs-6">{{experiencia.company}}</div>
+                    <div class="text-secondary fw-bold">{{experiencia.startend}}</div>
+                    <div class="text-secondary fw-bold">{{experiencia.ubication}}</div>
+                </div>
+                    
+                <div class="col-1 text-center">
+                    <i class="bi bi-plus-lg"></i><br>
+                    <i class="bi bi-pencil-fill"></i>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="expBackEnd">
                     <i class="bi bi-trash-fill"></i>
-                </a>
-                     
-            </div>
-        </div>
-
-        <!-- experiencia front end -->
-        <div class="row mb-3">
-            <div class="col-11">
-                <div class="row mb-2">
-                    <div class="col-1 text-center ">
-                        <img [src]="miPortfolio.aboutExperience.imgFront" alt="pixar" width="60">
-                    </div>
-                    <div class="col-10 ">
-                        <div class="fs-5">{{miPortfolio.aboutExperience.experienceFront}}</div>
-                        <div class="text-secondary fs-6">{{miPortfolio.aboutExperience.companyFront}}</div>
-                        <div class="text-secondary fw-bold">{{miPortfolio.aboutExperience.startendFront}}</div>
-                        <div class="text-secondary fw-bold">{{miPortfolio.aboutExperience.ubicationFront}}</div>
-                    </div>
+                    </a>      
                 </div>
-
-            </div>
-            <div class="col-1 text-center">
-                <i class="bi bi-plus-lg"></i>
-                <br>
-                <i class="bi bi-pencil-fill"></i>
-                <i class="bi bi-trash-fill"></i>
             </div>
         </div>
 
+<!-- eliminar-experiencia -->
+        
         <div class="modal modal-sm fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">

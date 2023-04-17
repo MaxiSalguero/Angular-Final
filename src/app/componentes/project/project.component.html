@@ -4,25 +4,19 @@
         <div class="col-11">
             <div class="fs-4 mb-2">{{miPortfolio.projects}}</div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">{{miPortfolio.aboutProjects.name1}}</h5>
-                  <p class="card-text">{{miPortfolio.aboutProjects.description1}}</p>
-                  <a href="https://github.com/MaxiSalguero/Challenge-Encriptador-AluraLatam" class="btn btn-primary">{{miPortfolio.aboutProjects.buttonText}}</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">{{miPortfolio.aboutProjects.name2}}</h5>
-                  <p class="card-text">{{miPortfolio.aboutProjects.description2}}</p>
-                  <a href="https://github.com/MaxiSalguero/Challenge-Aluraflix-AluraLatam" class="btn btn-primary">{{miPortfolio.aboutProjects.buttonText}}</a>
-                </div>
-              </div>
-            </div>
-          </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-13 mb-3 mb-sm-0 cuerpo">
+            <div *ngFor="let project of miPortfolio.aboutProjects" class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">{{project.name}}</h5>
+                  <p class="card-text">{{project.description}}</p>
+                  <a href="https://github.com/MaxiSalguero/Challenge-Encriptador-AluraLatam" class="btn btn-primary">{{project.buttonText}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
